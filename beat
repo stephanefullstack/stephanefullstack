@@ -1,0 +1,43 @@
+beatles = ["John Lenon", "Paul MacCartney", "Ringo Starr", "George Harrison"]
+
+puts "--------EACH----------"
+
+beatles.each do |beatles|
+  puts "- #{beatles}"
+end
+
+
+
+
+puts "-----------------------"
+
+
+beatles.each do |beatles, index|
+  puts "#{index}- #{beatles}"
+end
+
+
+
+puts "--------EACH-WITH-INDEX----------"
+
+beatles.each.with_index do |beatle, index|
+  puts "#{index + 1}- #{beatle}"
+end
+
+
+puts "-----MAPWITHEACH------"
+
+beatles_upcased = []
+beatles.each do |beatle|
+  beatles_upcased << beatle.upcase
+end
+
+puts "-----WITHMAP-----"
+
+beatles.map do |beatle|
+  beatle.upcase
+end
+
+puts "-----EN_UNE_LIGNE-----"
+
+beatles.map { |beatle| beatle.upcase}

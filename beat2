@@ -1,0 +1,11 @@
+def nice_display(title)
+  puts "---#{title}---"
+
+  yiel
+
+  puts "------"
+end
+
+nice_display("bonjour_en_ewondo) do
+  puts "Bemba Kiri"
+end
